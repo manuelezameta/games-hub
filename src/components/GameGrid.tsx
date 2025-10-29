@@ -13,8 +13,8 @@ export const GameGrid = () => {
       {error && <Text>{error}</Text>}
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
-        columnGap="10"
-        rowGap="10"
+        columnGap="3"
+        rowGap="3"
       >
         {isLoading &&
           skeletons.map((skeleton) => (
