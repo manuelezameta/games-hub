@@ -8,7 +8,7 @@ import {
   FaApple,
   FaAndroid,
 } from "react-icons/fa";
-import { SiNintendoswitch } from "react-icons/si";
+import { SiNintendoswitch, SiSega } from "react-icons/si";
 import { MdPhoneIphone } from "react-icons/md";
 import { BsGlobe } from "react-icons/bs";
 import type { IconType } from "react-icons";
@@ -28,12 +28,18 @@ export const PlatformIconList = ({ platforms }: Props) => {
     ios: MdPhoneIphone,
     web: BsGlobe,
     nintendo: SiNintendoswitch,
+    sega: SiSega,
   };
 
   return (
     <HStack marginY={1}>
       {platforms.map((platform) => (
-        <Icon key={platform.id} as={iconMap[platform.slug]} color="gray.500" />
+        <Icon
+          key={platform.id}
+          as={iconMap[platform.slug]}
+          color="gray.500"
+          aria-label={platform.slug}
+        />
       ))}
     </HStack>
   );
