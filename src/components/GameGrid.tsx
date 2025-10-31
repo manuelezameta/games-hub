@@ -18,8 +18,8 @@ export const GameGrid = ({ gameQuery }: Props) => {
       {error && <Text>{error}</Text>}
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
-        columnGap="3"
-        rowGap="3"
+        columnGap="5"
+        rowGap="5"
       >
         {isLoading &&
           skeletons.map((skeleton) => (
