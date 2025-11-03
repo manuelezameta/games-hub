@@ -21,6 +21,7 @@ export interface GameQuery {
   platform: Platform | null;
   sortOrder: string;
   searchText: string;
+  rating_top: number;
 }
 
 function App() {
