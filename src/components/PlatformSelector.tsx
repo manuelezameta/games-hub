@@ -1,6 +1,6 @@
 import type { Platform } from "@/hooks/useGames";
 import usePlatforms from "@/hooks/usePlatforms";
-import { Button, Flex, Menu, Portal } from "@chakra-ui/react";
+import { Button, Menu, Portal } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 
 interface Props {
